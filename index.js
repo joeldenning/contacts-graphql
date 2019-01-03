@@ -290,6 +290,6 @@ const resolvers = {
 
 // Create an express server and a GraphQL endpoint
 const app = express();
-const apolloServer = new ApolloServer({typeDefs, resolvers})
+const apolloServer = new ApolloServer({typeDefs, resolvers, introspection: true, playground: true})
 apolloServer.applyMiddleware({app})
 app.listen(process.env.PORT || 4000, () => console.log('Express GraphQL Server Now Running On localhost:4000/graphql'));
