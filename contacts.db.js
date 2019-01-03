@@ -5,6 +5,9 @@ const contacts = [
     id: '1',
     isBusiness: false,
     name: "Johnny Appleseed",
+    firstName: "Johnny",
+    middleInitial: null,
+    lastName: "Appleseed",
     contactType: "client",
     phones: {
       homePhone: {
